@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Usuarios;
+use App\Delegacion;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      $usuarios = Usuarios::orderBy('nombre')->get();
+      $delegaciones = Delegacion::all();
+      return view('home', [
+          'usuarios' => $usuarios,
+          'delegaciones' => $delegaciones,
+      ]);
     }
 }

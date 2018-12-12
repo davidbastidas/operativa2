@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 @include('__partials.head')
 <body>
 @if(isset(\Illuminate\Support\Facades\Auth::user()->id))
@@ -10,6 +10,7 @@
             @include('__partials.menu')
             <div class="main-panel">
                 <div class="content-wrapper">
+                    @include('__partials.scripts')
                     @yield('content')
                 </div>
                 @include('__partials.footer')
@@ -21,6 +22,5 @@
         @yield('content')
     </div>
 @endif
-@include('__partials.scripts')
 </body>
 </html>
