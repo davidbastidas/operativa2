@@ -19,7 +19,7 @@ class UploadExcelController extends Controller
         $id = Session::get('adminId');
         $name = Session::get('adminName');
 
-        return view('admin.upload', ['id' => $id, 'name' => $name, 'agenda' => $agenda, 'fecha' =>$fecha]);
+        return view('agenda.upload', ['id' => $id, 'name' => $name, 'agenda' => $agenda, 'fecha' =>$fecha]);
     }
 
 }

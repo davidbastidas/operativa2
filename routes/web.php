@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (isset( \Illuminate\Support\Facades\Auth::user()->id)){
+        return view('home');
+    }else{
+        return view('auth.login');
+    }
 });
 
 Auth::routes();
@@ -40,8 +44,6 @@ Route::get('admin/dashboard/{id}', [
     'as' => 'admin.dashboard',
     'uses' => 'AdminController@dashboard'
 ]);
-
-Route::post('logout', 'LoginController@logout')->name('logout');
 
 Route::match(['get', 'post'], 'admin/img-panel',
     [
