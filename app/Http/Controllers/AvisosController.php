@@ -32,7 +32,7 @@ class AvisosController extends Controller
         $totalAvisos = Avisos::all()->count();
         $delegaciones = Delegacion::all();
 
-        $perPage = 10;
+        $perPage = 6;
         $page = Input::get('page');
         $pageName = 'page';
         $page = Paginator::resolveCurrentPage($pageName);
@@ -51,12 +51,15 @@ class AvisosController extends Controller
             $user = User::where('id', $agenda->admin_id)->first()->name;
 
             $pendientes = Avisos::where('estado', 1)->where('agenda_id', $agenda->id)->count();
-            $realizados = Avisos::where('estado', 2)->where('agenda_id', $agenda->id)->count();
+            $realizados = Avisos::where('estado', '>', 1)->where('agenda_id', $agenda->id)->count();
             $cargasPendientes = AvisosTemp::where('agenda_id', $agenda->id)->count();
 
             $flag = false;
 
             if ($pendientes > 0){
+                $flag = true;
+            }
+            if ($cargasPendientes > 0){
                 $flag = true;
             }
 

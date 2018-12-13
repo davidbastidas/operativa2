@@ -35,7 +35,16 @@
                         visitas.</p>
                     <div class="row">
                         <div class="col-md-12">
+                          <div class="square-box-loader" id="geo-loader-ruta">
+                            <div class="square-box-loader-container">
+                              <div class="square-box-loader-corner-top"></div>
+                              <div class="square-box-loader-corner-bottom"></div>
+                            </div>
+                            <div class="square-box-loader-square"></div>
+                          </div>
+                          <div id="geo-ruta">
                             <div id="map-visitas"></div>
+                          </div>
                         </div>
                     </div>
                 </div>

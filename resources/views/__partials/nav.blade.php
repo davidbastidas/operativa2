@@ -26,7 +26,7 @@
                 <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown"
                    aria-expanded="false">
                     <span class="profile-text">Bienvenido, {{\Illuminate\Support\Facades\Auth::user()->name}}</span>
-                    <img class="img-xs rounded-circle" src="{{asset('assets/images/faces/face8.jpg')}}"
+                    <img class="img-xs rounded-circle" src="{{asset('staradmin/assets/images/faces/face8.jpg')}}"
                          alt="Profile image"> </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                     <br>
