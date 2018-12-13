@@ -6,7 +6,6 @@
     <div class="container-scroller">
         @include('__partials.nav')
         <div class="container-fluid page-body-wrapper">
-            @include('__partials.settings-panel')
             @include('__partials.menu')
             <div class="main-panel">
                 <div class="content-wrapper">

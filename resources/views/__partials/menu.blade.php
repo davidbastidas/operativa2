@@ -21,7 +21,7 @@
     }
 
     a[aria-expanded="true"]:not(#UserDropdown){
-        background-color: #42DCA3 !important;
+        background-color: #d69d0f !important;
     }
 
 </style>

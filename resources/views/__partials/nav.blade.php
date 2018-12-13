@@ -22,11 +22,6 @@
                     <i class="mdi mdi-home" style="font-size: 25px !important;"></i>
                 </a>
             </li>
-            <li class="nav-item d-none d-lg-block color-setting">
-                <a class="nav-link notme" href="#">
-                    <i class="mdi mdi-tune"></i>
-                </a>
-            </li>
             <li class="nav-item dropdown d-none d-xl-inline-block">
                 <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown"
                    aria-expanded="false">

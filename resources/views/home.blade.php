@@ -99,11 +99,7 @@
           <div class="card">
               <div class="card-body">
                   <h4 class="card-title">Ultima ubicacion</h4>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div id="map-dashboard"></div>
-                    </div>
-                  </div>
+                  <div id="map-dashboard"></div>
               </div>
           </div>
       </div>

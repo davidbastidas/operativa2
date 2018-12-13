@@ -48,18 +48,16 @@
         $('#form-hidden').append(form);
         $('#form_temp_delete').submit();
       });
-  });
-</script>
 
-<script>
-  $('#btnIndicador').on('click', function () {
-    let fecha = $('#fecha').val();
-    let gestor_filtro = $('#gestor_filtro').val();
-    let delegacion_filtro = $('#delegacion_filtro').val();
-    let estados_filtro = $('#estados_filtro').val();
-    dashboard.getAvancePorGestor(fecha, gestor_filtro, delegacion_filtro, estados_filtro);
-    dashboard.getAvanceDiario(fecha, gestor_filtro, delegacion_filtro);
-    dashboard.getPointMapGestores(fecha, gestor_filtro, delegacion_filtro, estados_filtro);
+      $('#btnIndicador').on('click', function () {
+        let fecha = $('#fecha').val();
+        let gestor_filtro = $('#gestor_filtro').val();
+        let delegacion_filtro = $('#delegacion_filtro').val();
+        let estados_filtro = $('#estados_filtro').val();
+        dashboard.getAvancePorGestor(fecha, gestor_filtro, delegacion_filtro, estados_filtro);
+        dashboard.getAvanceDiario(fecha, gestor_filtro, delegacion_filtro);
+        dashboard.getPointMapGestores(fecha, gestor_filtro, delegacion_filtro, estados_filtro);
+      });
   });
 </script>
 

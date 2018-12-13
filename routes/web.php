@@ -131,7 +131,7 @@ Route::get('admin/avisos/delete/{aviso}', [
     'uses' => 'AvisosController@deleteAviso'
 ]);
 
-Route::get('admin/avisos/delete/all', [
+Route::post('admin/avisos/delete/all', [
     'as' => 'aviso.eliminar.all',
     'uses' => 'AvisosController@deleteAvisoPorSeleccion'
 ]);

@@ -49,7 +49,7 @@
                                 <button type="submit" class="btn btn-primary submit-btn">INGRESAR</button>
                             </div>
                             <div class="wrapper mt-5 text-gray">
-                                <p class="footer-text">Copyright © 2018 GestionAvisos 1.1. All rights reserved.</p>
+                                <p class="footer-text">Copyright © 2018 Gestion Avisos 2.0. All rights reserved.</p>
                             </div>
                         </form>
                     </div>
