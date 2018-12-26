@@ -30,7 +30,7 @@
             <div class="nav-link">
                 <div class="user-wrapper">
                     <div class="profile-image">
-                        <img src="{{asset('staradmin/assets/images/faces/face3.jpg')}}" alt="profile image"></div>
+                        <img src="{{asset('public/staradmin/assets/images/faces/face3.jpg')}}" alt="profile image"></div>
                     <div class="text-wrapper">
                         <p class="profile-name">{{\Illuminate\Support\Facades\Auth::user()->name}}  </p>
                         <div>

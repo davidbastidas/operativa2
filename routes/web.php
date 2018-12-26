@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    if (isset( \Illuminate\Support\Facades\Auth::user()->id)){
-        return view('home');
-    }else{
-        return view('auth.login');
-    }
-});
+Route::get('/', [
+    'as' => '/',
+    'uses' => 'HomeController@index'
+]);
 
 Auth::routes();
 
@@ -143,5 +140,3 @@ Route::group(['middleware' => ['auth']], function () {
         'uses' => 'AvisosController@getPointMapVisita'
     ]);
 });
-
-

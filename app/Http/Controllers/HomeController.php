@@ -23,13 +23,17 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-      $usuarios = Usuarios::orderBy('nombre')->get();
-      $delegaciones = Delegacion::all();
-      return view('home', [
-          'usuarios' => $usuarios,
-          'delegaciones' => $delegaciones,
-      ]);
-    }
+     public function index()
+     {
+       if (isset(\Illuminate\Support\Facades\Auth::user()->id)){
+         $usuarios = Usuarios::orderBy('nombre')->get();
+         $delegaciones = Delegacion::all();
+        return view('home', [
+            'usuarios' => $usuarios,
+            'delegaciones' => $delegaciones,
+        ]);
+       }else{
+           return view('auth.login');
+       }
+     }
 }

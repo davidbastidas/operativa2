@@ -63,6 +63,10 @@ class AvisosController extends Controller
                 $flag = true;
             }
 
+            if ($realizados > 0){
+                $flag = true;
+            }
+
             array_push($array, (object)array(
                 'id' => $agenda->id,
                 'codigo' => $agenda->codigo,
@@ -246,7 +250,6 @@ class AvisosController extends Controller
 
         foreach ($avisos as $aviso) {
             $av = new Avisos();
-            $av->id = $aviso->id;
             $av->campana = $aviso->campana;
             $av->campana2 = $aviso->campana2;
             $av->fecha_entrega = $aviso->fecha_entrega;

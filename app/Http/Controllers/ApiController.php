@@ -180,10 +180,10 @@ class ApiController extends Controller
         $aviso->save();
 
         try {
-          $logSeg = new Log();
+          /*$logSeg = new Log();
           $logSeg->log = '' . $request;
           $logSeg->aviso_id = $aviso->id;
-          $logSeg->save();
+          $logSeg->save();*/
 
           if($request->foto != null || $request->foto != ""){
             //decode base64 string
