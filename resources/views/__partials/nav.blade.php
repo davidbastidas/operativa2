@@ -6,10 +6,10 @@
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center" style="background-color: #003a63">
         <a class="navbar-brand brand-logo">
-            <img src="{{asset('public/images/quanta.png')}}" style="width: 170px; height: 50px;">
+            <img src="{{asset('public/images/logo.png')}}" style="width: 170px; height: 50px;">
         </a>
         <a class="navbar-brand brand-logo-mini">
-            <img src="{{asset('public/images/quanta-mini.png')}}" alt="logo"/>
+            <img src="{{asset('public/images/logo_mini.png')}}" alt="logo"/>
         </a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center" style="background-color: #008080">
